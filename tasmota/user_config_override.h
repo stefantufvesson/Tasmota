@@ -34,27 +34,6 @@
  *   - All parameters can be persistent changed online using commands via MQTT, WebConsole or Serial.
 \*****************************************************************************************************/
 
-// -- Setup your own MQTT settings  ---------------
-#undef  MQTT_HOST
-#define MQTT_HOST         "bcad4e01c1b64c0caa20fec8e4f0bc85.s2.eu.hivemq.cloud" // [MqttHost]
-
-#undef  MQTT_PORT
-#define MQTT_PORT         8883                   // [MqttPort] MQTT port (10123 on CloudMQTT)
-
-#undef  MQTT_USER
-#define MQTT_USER         "heatcontroller"         // [MqttUser] Optional user
-
-#undef  MQTT_PASS
-#define MQTT_PASS         "0xES97R69eAxKEnE"         // [MqttPassword] Optional password
-
-#ifndef USE_MQTT_TLS 
-#define USE_MQTT_TLS                             // Use TLS for MQTT connection (+34.5k code, +7.0k mem and +4.8k additional during connection handshake)
-#define MQTT_TLS_ENABLED       true              // [SetOption103] Enable TLS mode (requires TLS version)
-//  #define USE_MQTT_TLS_CA_CERT                   // Force full CA validation instead of fingerprints, slower, but simpler to use.  (+2.2k code, +1.9k mem during connection handshake)
-                                                   // This includes the LetsEncrypt CA in tasmota_ca.ino for verifying server certificates
-//  #define USE_MQTT_TLS_FORCE_EC_CIPHER           // Force Elliptic Curve cipher (higher security) required by some servers (automatically enabled with USE_MQTT_AWS_IOT) (+11.4k code, +0.4k mem)
-#endif
-
 /*
 Examples :
 
@@ -108,7 +87,26 @@ Examples :
 // !!! Remember that your changes GOES AT THE BOTTOM OF THIS FILE right before the last #endif !!!
 */
 
+// -- Setup your own MQTT settings  ---------------
+#undef  MQTT_HOST
+#define MQTT_HOST         "bcad4e01c1b64c0caa20fec8e4f0bc85.s2.eu.hivemq.cloud" // [MqttHost]
 
+#undef  MQTT_PORT
+#define MQTT_PORT         8883                   // [MqttPort] MQTT port (10123 on CloudMQTT)
+
+#undef  MQTT_USER
+#define MQTT_USER         "heatcontroller"         // [MqttUser] Optional user
+
+#undef  MQTT_PASS
+#define MQTT_PASS         "0xES97R69eAxKEnE"         // [MqttPassword] Optional password
+
+#ifndef USE_MQTT_TLS 
+#define USE_MQTT_TLS                             // Use TLS for MQTT connection (+34.5k code, +7.0k mem and +4.8k additional during connection handshake)
+#define MQTT_TLS_ENABLED       true              // [SetOption103] Enable TLS mode (requires TLS version)
+//  #define USE_MQTT_TLS_CA_CERT                   // Force full CA validation instead of fingerprints, slower, but simpler to use.  (+2.2k code, +1.9k mem during connection handshake)
+                                                   // This includes the LetsEncrypt CA in tasmota_ca.ino for verifying server certificates
+//  #define USE_MQTT_TLS_FORCE_EC_CIPHER           // Force Elliptic Curve cipher (higher security) required by some servers (automatically enabled with USE_MQTT_AWS_IOT) (+11.4k code, +0.4k mem)
+#endif
 
 
 
