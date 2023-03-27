@@ -12,7 +12,7 @@ _Written for PlatformIO._
 <hr></hr>
 
 **In light of current events we like to support the people behind _PlatformIO Project_, especially Ivan Kravets, and wish them the strength to help stop the war. See [platformio-is-ukrainian-project-please-help-us-stop-the-war](https://community.platformio.org/t/platformio-is-ukrainian-project-please-help-us-stop-the-war/26330) for what you can do.**
-
+    
 <hr></hr>
 
 ## Easy install

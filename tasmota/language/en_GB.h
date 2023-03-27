@@ -315,6 +315,7 @@
 #define D_SUCCESSFUL_WIFI_CONNECTION "Successful WiFi Connection"
 #define D_NOW_YOU_CAN_CLOSE_THIS_WINDOW "Now you can close this window"
 #define D_REDIRECTING_TO_NEW_IP "Redirecting to new device's IP address"
+#define D_REDIRECTING_TO_NRJIQ "Redirecting to NRJIQ registration"
 
 #define D_MQTT_PARAMETERS "MQTT parameters"
 #define D_CLIENT "Client"
